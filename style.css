@@ -1,4 +1,4 @@
-  /* Base */
+/* Base */
 *,
 *::after,
 *::before {
@@ -88,8 +88,11 @@ h3 {
 }
 
 .cart-foto {
-    width: 300px;
-    height: 200px;
+    width:100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 8px;
 }
 
 .card-img {
@@ -127,6 +130,7 @@ h3 {
 
 /* text-cart */
 .name {
+    color:#1b263b;
     font-size: 22px;
     font-weight: bold;
 }
@@ -143,6 +147,7 @@ h3 {
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(236, 217, 217, 0.4);
+  transition: all 0.3s ease;
 }
 
 /* breadcrumbs */
@@ -214,11 +219,41 @@ h3 {
     padding: 10px;
 }
 
-.footer-text :hover {
+.footer-text a:hover {
     color: #90caf9;
 }
 
 .region {
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px){
+    .footer {
+    display: block;
+}
+
+.footer-section {
+    width: 100%;
+    border: none;
+}
+
+.footer-text {
+    column-count: 1;
+}
+
+.region {
+    margin: 20px;
+}
+
+.card-post {
+    display: block;
+}
+
+.card-img {
+    margin: 0;
+    max-height: 150px;
+}
+}
+
+
 
